@@ -14,6 +14,9 @@ const routes = (
             <IndexRoute component={ContactListContainer}/>
             <Route path=":contactId" component={ContactContainer}/>
         </Route>
+        <Route path="/" component={App}>
+            <IndexRoute component={ContactListContainer}/>
+        </Route>
     </Router>
 )
 
